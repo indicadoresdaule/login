@@ -59,7 +59,7 @@ export async function POST(request: Request) {
 
     // Send invitation email using Supabase Auth Admin
     const adminClient = getAdminClient()
-    const redirectUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://login-sooty-one.vercel.app/"}/auth/callback`
+    const redirectUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://login-umber-kappa.vercel.app"}/auth/callback`
 
     const { error: emailError } = await adminClient.auth.admin.inviteUserByEmail(email, {
       redirectTo: redirectUrl,
