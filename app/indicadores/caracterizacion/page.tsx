@@ -139,11 +139,13 @@ export default function CaracterizacionPage() {
               <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
                 <CaracterizacionResumen {...estadisticas} />
               </div>
-
+              
               <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
                 <CaracterizacionGraficos datos={datosGraficos} />
               </div>
-
+<p className="text-secondary-text text-xs sm:text-sm md:text-base lg:text-lg">
+              Análisis detallado de los desechos sólidos generados en los hogares del cantón Daule
+            </p>
               <div>
                 <CaracterizacionTabla datos={datosTabla} totalDesechos={totalDesechos} />
               </div>
